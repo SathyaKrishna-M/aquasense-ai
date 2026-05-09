@@ -146,7 +146,12 @@ body {
 }
 
 .leaflet-tile {
-  filter: brightness(0.3) saturate(0.2) hue-rotate(200deg) contrast(1.1) !important;
+  filter: brightness(0.28) saturate(0.15) hue-rotate(195deg) contrast(1.2) !important;
+}
+
+/* Ship marker drop shadow */
+.ship-marker {
+  filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 2px 4px rgba(0,0,0,0.8));
 }
 
 /* Zoom controls */
