@@ -5,29 +5,36 @@
    DESIGN TOKENS
 ═══════════════════════════════════════════════════════════ */
 :root {
-  --bg-base:          #020811;
-  --bg-surface:       #060f1e;
-  --bg-panel:         rgba(4, 10, 26, 0.94);
-  --bg-elevated:      rgba(6, 16, 36, 0.97);
+  --bg-base:         #010b18;
+  --bg-surface:      #040e1c;
+  --bg-panel:        rgba(3, 10, 24, 0.92);
+  --bg-elevated:     rgba(5, 14, 30, 0.96);
+  --bg-card:         rgba(4, 12, 26, 0.88);
 
-  --border-subtle:    rgba(34, 211, 238, 0.06);
-  --border-default:   rgba(34, 211, 238, 0.11);
-  --border-active:    rgba(34, 211, 238, 0.28);
+  --border-subtle:   rgba(34, 211, 238, 0.05);
+  --border-default:  rgba(34, 211, 238, 0.10);
+  --border-active:   rgba(34, 211, 238, 0.28);
+  --border-glow:     rgba(34, 211, 238, 0.18);
 
-  --text-primary:     #ddeeff;
-  --text-secondary:   #6b8fae;
-  --text-muted:       #334a60;
-  --text-accent:      #22d3ee;
+  --text-primary:    #e2eeff;
+  --text-secondary:  #5a7a9a;
+  --text-muted:      #2a3f55;
+  --text-accent:     #22d3ee;
 
-  --accent-cyan:      #22d3ee;
-  --accent-blue:      #38bdf8;
-  --accent-teal:      #14b8a6;
-  --accent-violet:    #818cf8;
+  --accent-cyan:     #22d3ee;
+  --accent-blue:     #38bdf8;
+  --accent-teal:     #14b8a6;
+  --accent-violet:   #818cf8;
+  --accent-indigo:   #6366f1;
 
-  --risk-safe:        #10b981;
-  --risk-moderate:    #f59e0b;
-  --risk-elevated:    #f97316;
-  --risk-critical:    #ef4444;
+  --risk-safe:       #10b981;
+  --risk-moderate:   #f59e0b;
+  --risk-elevated:   #f97316;
+  --risk-critical:   #ef4444;
+
+  --glow-cyan:       rgba(34, 211, 238, 0.35);
+  --glow-critical:   rgba(239, 68, 68, 0.4);
+  --glow-safe:       rgba(16, 185, 129, 0.3);
 
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
@@ -35,10 +42,10 @@
   --radius-sm:  6px;
   --radius-md:  10px;
   --radius-lg:  14px;
-  --radius-xl:  18px;
+  --radius-xl:  20px;
 
-  --transition-fast:   120ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-smooth: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast:   110ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 240ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow:   400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -55,36 +62,32 @@ body {
   font-size: 13px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 #root {
   width: 100%;
-  max-width: 100%;
-  margin: 0;
-  text-align: left;
-  border: none;
-  min-height: 100svh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* ═══════════════════════════════════════════════════════════
-   TYPOGRAPHY UTILITIES
+   TYPOGRAPHY
 ═══════════════════════════════════════════════════════════ */
 .label {
   font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-secondary);
 }
 
 .metric {
   font-family: var(--font-mono);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
-  color: var(--text-primary);
 }
 
 .mono { font-family: var(--font-mono); }
@@ -96,62 +99,69 @@ body {
   background: var(--bg-panel);
   border: 1px solid var(--border-default);
   border-radius: var(--radius-lg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .panel-sm {
   background: var(--bg-elevated);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .panel-header {
   font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-secondary);
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .panel-header::before {
   content: '';
   width: 2px;
-  height: 10px;
-  background: var(--accent-cyan);
+  height: 12px;
+  background: linear-gradient(180deg, var(--accent-cyan), transparent);
   border-radius: 2px;
-  opacity: 0.7;
   flex-shrink: 0;
 }
+
+/* Glass card with animated border */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(16px);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition-smooth);
+}
+.glass-card:hover { border-color: var(--border-glow); }
 
 /* ═══════════════════════════════════════════════════════════
    SCROLLBAR
 ═══════════════════════════════════════════════════════════ */
-::-webkit-scrollbar       { width: 3px; height: 3px; }
+::-webkit-scrollbar       { width: 2px; height: 2px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(34,211,238,0.15); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(34,211,238,0.3); }
+::-webkit-scrollbar-thumb { background: rgba(34,211,238,0.12); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(34,211,238,0.25); }
 
 /* ═══════════════════════════════════════════════════════════
-   LEAFLET — NAVAL DARK THEME
+   LEAFLET — CINEMATIC DARK OCEAN THEME
 ═══════════════════════════════════════════════════════════ */
 .leaflet-container {
-  background: #020a18 !important;
+  background: #010b18 !important;
   font-family: var(--font-sans) !important;
 }
 
+/* CartoDB Dark Matter tiles — very subtle filter only */
 .leaflet-tile {
-  filter: brightness(0.28) saturate(0.15) hue-rotate(195deg) contrast(1.2) !important;
-}
-
-/* Ship marker drop shadow */
-.ship-marker {
-  filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+  filter: brightness(0.82) saturate(0.65) hue-rotate(8deg) !important;
 }
 
 /* Zoom controls */
@@ -159,10 +169,10 @@ body {
   border: 1px solid var(--border-default) !important;
   border-radius: var(--radius-sm) !important;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6), 0 0 0 1px rgba(34,211,238,0.05) !important;
 }
 .leaflet-control-zoom a {
-  background: var(--bg-elevated) !important;
+  background: rgba(3,10,24,0.95) !important;
   color: var(--text-secondary) !important;
   border-color: var(--border-subtle) !important;
   width: 30px !important;
@@ -172,12 +182,12 @@ body {
   transition: all var(--transition-fast) !important;
 }
 .leaflet-control-zoom a:hover {
-  background: rgba(34, 211, 238, 0.1) !important;
+  background: rgba(34,211,238,0.08) !important;
   color: var(--accent-cyan) !important;
 }
-.leaflet-bottom.leaflet-right { bottom: 10px !important; right: 10px !important; }
+.leaflet-bottom.leaflet-right { bottom: 12px !important; right: 12px !important; }
 
-/* Tooltips — transparent wrapper, content styled by React */
+/* Transparent tooltips */
 .leaflet-tooltip {
   background: transparent !important;
   border: none !important;
@@ -190,121 +200,228 @@ body {
 .leaflet-tooltip-right::before { display: none !important; }
 
 /* ═══════════════════════════════════════════════════════════
-   SHIP MARKERS
+   ZONE CIRCLE CSS EFFECTS
 ═══════════════════════════════════════════════════════════ */
+
+/* Outer glow blur rings */
+.zone-blur-far  { filter: blur(14px); }
+.zone-blur-out  { filter: blur(7px);  }
+.zone-blur-mid  { filter: blur(3px);  }
+
+/* Ship marker */
 .ship-marker {
-  filter: drop-shadow(0 0 4px currentColor);
+  filter: drop-shadow(0 0 6px currentColor);
+  transition: transform 0.3s ease;
+}
+
+/* Ship wake trail */
+.ship-wake {
+  animation: wakeFade 3s ease-out forwards;
 }
 
 /* ═══════════════════════════════════════════════════════════
-   ANIMATIONS
+   ATMOSPHERE OVERLAYS
 ═══════════════════════════════════════════════════════════ */
 
-/* Zone pulse — critical */
-.zone-critical-outer {
-  animation: zoneCriticalOuter 3s ease-in-out infinite;
+/* Scan line sweeping animation */
+.scan-line {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(34,211,238,0.0) 10%,
+    rgba(34,211,238,0.18) 50%,
+    rgba(34,211,238,0.0) 90%,
+    transparent 100%
+  );
+  animation: scanDown 14s linear infinite;
+  pointer-events: none;
 }
-@keyframes zoneCriticalOuter {
-  0%, 100% { opacity: 0.15; }
-  50%       { opacity: 0.04; }
+@keyframes scanDown {
+  0%   { top: -1px; opacity: 0; }
+  3%   { opacity: 1; }
+  97%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Sonar ring pulse */
+.sonar-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(34,211,238,0.4);
+  animation: sonarPulse 3s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes sonarPulse {
+  0%   { transform: scale(0.3); opacity: 0.8; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ZONE ANIMATIONS
+═══════════════════════════════════════════════════════════ */
+.zone-critical-outer {
+  animation: zoneCriticalPulse 2.8s ease-in-out infinite;
+}
+@keyframes zoneCriticalPulse {
+  0%, 100% { opacity: 0.18; stroke-width: 1; }
+  50%       { opacity: 0.04; stroke-width: 2; }
 }
 
 .zone-critical-inner {
-  animation: zoneCriticalInner 3s ease-in-out infinite;
+  animation: zoneCriticalCore 2.8s ease-in-out infinite;
 }
-@keyframes zoneCriticalInner {
+@keyframes zoneCriticalCore {
   0%, 100% { opacity: 1; }
-  50%       { opacity: 0.55; }
+  50%       { opacity: 0.6; }
 }
 
 .zone-elevated-inner {
-  animation: zoneElevated 4s ease-in-out infinite;
+  animation: zoneElevated 4.5s ease-in-out infinite;
 }
 @keyframes zoneElevated {
   0%, 100% { opacity: 0.85; }
-  50%       { opacity: 0.4; }
+  50%       { opacity: 0.45; }
 }
 
-/* Alert entrance */
+.zone-safe-inner {
+  animation: zoneSafe 6s ease-in-out infinite;
+}
+@keyframes zoneSafe {
+  0%, 100% { opacity: 0.7; }
+  50%       { opacity: 0.35; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ALERT ANIMATIONS
+═══════════════════════════════════════════════════════════ */
 .alert-enter {
-  animation: alertIn 0.3s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+  animation: alertSlideIn 0.35s cubic-bezier(0.34, 1.4, 0.64, 1) both;
 }
-@keyframes alertIn {
-  from { opacity: 0; transform: translateX(16px) scale(0.97); }
-  to   { opacity: 1; transform: translateX(0)   scale(1); }
-}
-
-/* Alert pulse ring (top bar) */
-.alert-pulse {
-  animation: pulseRing 2s ease-out infinite;
-}
-@keyframes pulseRing {
-  0%   { box-shadow: 0 0 0 0   rgba(239,68,68,0.5); }
-  70%  { box-shadow: 0 0 0 8px rgba(239,68,68,0); }
-  100% { box-shadow: 0 0 0 0   rgba(239,68,68,0); }
+@keyframes alertSlideIn {
+  from { opacity: 0; transform: translateX(14px) scale(0.97); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
 }
 
-/* Insight fade */
-.insight-fade {
-  animation: insightFadeIn 0.45s ease both;
+.alert-critical-pulse {
+  animation: criticalAura 1.8s ease-out infinite;
 }
-@keyframes insightFadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* Scan dot */
-.scan-dot {
-  animation: scanPulse 1.4s ease-in-out infinite;
-}
-@keyframes scanPulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.25; transform: scale(0.5); }
+@keyframes criticalAura {
+  0%   { box-shadow: 0 0 0 0 rgba(239,68,68,0.45); }
+  70%  { box-shadow: 0 0 0 10px rgba(239,68,68,0); }
+  100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); }
 }
 
-/* Live blink */
+/* ═══════════════════════════════════════════════════════════
+   LIVE / STATUS INDICATORS
+═══════════════════════════════════════════════════════════ */
 .live-blink {
   animation: liveBlink 1.8s ease-in-out infinite;
 }
 @keyframes liveBlink {
   0%, 100% { opacity: 1; }
-  50%       { opacity: 0.35; }
+  50%       { opacity: 0.25; }
 }
 
-/* Shimmer */
-.shimmer {
-  background: linear-gradient(90deg,
-    rgba(255,255,255,0) 0%,
-    rgba(34,211,238,0.06) 50%,
-    rgba(255,255,255,0) 100%);
-  background-size: 200% 100%;
-  animation: shimmer 2.5s ease-in-out infinite;
+.scan-dot {
+  animation: scanPulse 1.4s ease-in-out infinite;
 }
-@keyframes shimmer {
-  0%   { background-position: -200% 0; }
-  100% { background-position:  200% 0; }
+@keyframes scanPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.2; transform: scale(0.4); }
 }
 
-/* Bottom bar expand */
-.bottom-expand {
-  transition: height var(--transition-slow);
+.pulse-ring {
+  animation: pulseRing 2s ease-out infinite;
+}
+@keyframes pulseRing {
+  0%   { box-shadow: 0 0 0 0 rgba(34,211,238,0.5); }
+  70%  { box-shadow: 0 0 0 8px rgba(34,211,238,0); }
+  100% { box-shadow: 0 0 0 0 rgba(34,211,238,0); }
 }
 
-/* Hover lift */
+/* ═══════════════════════════════════════════════════════════
+   TRANSITIONS + HOVER
+═══════════════════════════════════════════════════════════ */
 .hover-lift {
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 .hover-lift:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
 }
 
-/* Forecast badge */
-.badge-stable    { background:rgba(16,185,129,.12); color:#34d399; border:1px solid rgba(16,185,129,.2); }
-.badge-escalating{ background:rgba(249,115,22,.12); color:#fb923c; border:1px solid rgba(249,115,22,.25); }
-.badge-critical  { background:rgba(239,68,68,.12);  color:#f87171; border:1px solid rgba(239,68,68,.3);  animation: pulseRing 2s ease-out infinite; }
-.badge-decreasing{ background:rgba(56,189,248,.1);  color:#38bdf8; border:1px solid rgba(56,189,248,.2); }
+.bottom-expand { transition: height var(--transition-slow); }
 
-/* Recharts overrides */
+/* ═══════════════════════════════════════════════════════════
+   FADE + INSIGHT ANIMATIONS
+═══════════════════════════════════════════════════════════ */
+.insight-fade {
+  animation: insightIn 0.5s ease both;
+}
+@keyframes insightIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes wakeFade {
+  0%   { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FORECAST BADGES
+═══════════════════════════════════════════════════════════ */
+.badge-stable     { background: rgba(16,185,129,.1); color:#34d399; border:1px solid rgba(16,185,129,.18); }
+.badge-escalating { background: rgba(249,115,22,.1); color:#fb923c; border:1px solid rgba(249,115,22,.22); }
+.badge-critical   { background: rgba(239,68,68,.1);  color:#f87171; border:1px solid rgba(239,68,68,.28); animation: criticalAura 1.8s ease-out infinite; }
+.badge-decreasing { background: rgba(56,189,248,.08); color:#38bdf8; border:1px solid rgba(56,189,248,.18); }
+
+/* ═══════════════════════════════════════════════════════════
+   RECHARTS
+═══════════════════════════════════════════════════════════ */
 .recharts-cartesian-axis-tick-value { fill: var(--text-muted) !important; }
 .recharts-text { fill: var(--text-muted) !important; }
+
+/* ═══════════════════════════════════════════════════════════
+   SHIMMER
+═══════════════════════════════════════════════════════════ */
+.shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(34,211,238,0.05) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MAP ATMOSPHERE
+═══════════════════════════════════════════════════════════ */
+.map-vignette {
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    transparent 30%,
+    rgba(1, 8, 20, 0.55) 75%,
+    rgba(1, 8, 20, 0.80) 100%
+  );
+}
+
+.map-grid {
+  background-image:
+    linear-gradient(rgba(34,211,238,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34,211,238,0.018) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 15%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 15%, transparent 70%);
+}
+
+.map-top-fade {
+  background: linear-gradient(180deg, rgba(1,8,20,0.5) 0%, transparent 40%);
+}
+
+.map-bottom-fade {
+  background: linear-gradient(0deg, rgba(1,8,20,0.5) 0%, transparent 40%);
+}

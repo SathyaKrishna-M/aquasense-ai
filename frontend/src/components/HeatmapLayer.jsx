@@ -3,58 +3,61 @@ import { Circle, Tooltip } from 'react-leaflet'
 import { useStore } from '../store/useStore'
 import { useMemo } from 'react'
 
-// ── Zone radius tiers (meters) ────────────────────────────────────────────
-const R_CORE  = 55000   // solid fill circle
-const R_HALO  = 85000   // semi-transparent halo
-const R_PULSE = 115000  // outer pulse ring (critical only)
-
-function riskStyle(risk, viewMode, zone) {
+// ── Risk level → color config ──────────────────────────────────────────────
+function riskColors(risk, viewMode, zone) {
   if (viewMode === 'acoustic') {
     const n = zone.noise
-    if (n >= 80) return { fill: '#ef4444', stroke: '#f87171' }
-    if (n >= 60) return { fill: '#f59e0b', stroke: '#fbbf24' }
-    return { fill: '#10b981', stroke: '#34d399' }
+    if (n >= 80) return { fill: '#ef4444', stroke: '#f87171', label: 'HIGH',     lc: '#f87171' }
+    if (n >= 60) return { fill: '#f59e0b', stroke: '#fbbf24', label: 'MEDIUM',   lc: '#fbbf24' }
+    return               { fill: '#10b981', stroke: '#34d399', label: 'LOW',      lc: '#34d399' }
   }
   if (viewMode === 'sensitivity') {
     const s = zone.sensitivity
-    if (s >= 0.75) return { fill: '#a78bfa', stroke: '#c4b5fd' }
-    if (s >= 0.5)  return { fill: '#818cf8', stroke: '#a5b4fc' }
-    return { fill: '#475569', stroke: '#64748b' }
+    if (s >= 0.75) return { fill: '#a78bfa', stroke: '#c4b5fd', label: 'HIGH',   lc: '#c4b5fd' }
+    if (s >= 0.5)  return { fill: '#6366f1', stroke: '#818cf8', label: 'MEDIUM', lc: '#818cf8' }
+    return                { fill: '#334155', stroke: '#475569', label: 'LOW',     lc: '#64748b' }
   }
   if (viewMode === 'traffic') {
     const d = zone.shipDensity
-    if (d >= 70) return { fill: '#f97316', stroke: '#fb923c' }
-    if (d >= 35) return { fill: '#eab308', stroke: '#facc15' }
-    return { fill: '#22c55e', stroke: '#4ade80' }
+    if (d >= 70) return { fill: '#f97316', stroke: '#fb923c', label: 'DENSE',    lc: '#fb923c' }
+    if (d >= 35) return { fill: '#eab308', stroke: '#facc15', label: 'MODERATE', lc: '#facc15' }
+    return               { fill: '#22c55e', stroke: '#4ade80', label: 'SPARSE',   lc: '#4ade80' }
   }
-  // combined — risk-based
-  if (risk >= 75) return { fill: '#ef4444', stroke: '#f87171' }
-  if (risk >= 50) return { fill: '#f59e0b', stroke: '#fbbf24' }
-  return { fill: '#10b981', stroke: '#34d399' }
-}
-
-function riskLabel(risk) {
-  if (risk >= 75) return { text: 'CRITICAL', color: '#f87171' }
-  if (risk >= 50) return { text: 'ELEVATED', color: '#fbbf24' }
-  return { text: 'NOMINAL',   color: '#34d399' }
+  // Combined risk
+  if (risk >= 75) return { fill: '#ef4444', stroke: '#f87171', label: 'CRITICAL', lc: '#f87171' }
+  if (risk >= 50) return { fill: '#f59e0b', stroke: '#fbbf24', label: 'ELEVATED', lc: '#fbbf24' }
+  return                 { fill: '#10b981', stroke: '#34d399', label: 'NOMINAL',  lc: '#34d399' }
 }
 
 const FC_ARROWS = {
   critical:   { arrow: '▲▲', color: '#f87171' },
   escalating: { arrow: '▲',  color: '#fb923c' },
-  stable:     { arrow: '—',  color: '#6b8fae' },
+  stable:     { arrow: '―',  color: '#5a7a9a' },
   decreasing: { arrow: '▼',  color: '#38bdf8' },
+}
+
+// Radius tiers (meters)
+const R = {
+  FAR:  130000,  // outermost glow (critical only)
+  OUT:   95000,  // outer halo
+  MID:   70000,  // mid glow
+  CORE:  50000,  // solid core
+  DOT:   20000,  // bright center
 }
 
 function ContributorBar({ label, value, color }) {
   return (
-    <div style={{ marginTop: 5 }}>
-      <div className="flex justify-between" style={{ marginBottom: 2 }}>
-        <span style={{ fontSize: 9, color: '#6b8fae' }}>{label}</span>
-        <span style={{ fontSize: 9, fontWeight: 700, color: '#ddeeff' }}>+{value.toFixed(0)}</span>
+    <div style={{ marginTop: 6 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 2 }}>
+        <span style={{ fontSize: 9, color: '#5a7a9a' }}>{label}</span>
+        <span style={{ fontSize: 9, fontWeight: 700, color: '#c8ddef' }}>+{value.toFixed(0)}</span>
       </div>
-      <div style={{ height: 3, background: 'rgba(255,255,255,0.06)', borderRadius: 2 }}>
-        <div style={{ height: '100%', width: `${Math.min(100, value)}%`, background: color, borderRadius: 2, opacity: 0.8 }} />
+      <div style={{ height: 3, background: 'rgba(255,255,255,0.05)', borderRadius: 2, overflow: 'hidden' }}>
+        <div style={{
+          height: '100%', width: `${Math.min(100, value)}%`,
+          background: color, borderRadius: 2,
+          boxShadow: `0 0 6px ${color}60`,
+        }} />
       </div>
     </div>
   )
@@ -64,133 +67,144 @@ export default function HeatmapLayer() {
   const zones    = useStore(s => s.zones)
   const viewMode = useStore(s => s.viewMode)
 
-  const styledZones = useMemo(() =>
+  const styled = useMemo(() =>
     zones.map(z => ({
       ...z,
-      style:              riskStyle(z.risk, viewMode, z),
-      lbl:                riskLabel(z.risk),
-      fc:                 FC_ARROWS[z.forecast] || FC_ARROWS.stable,
-      acousticContrib:    parseFloat((z.noise       * 0.4).toFixed(1)),
-      densityContrib:     parseFloat((z.shipDensity * 0.4).toFixed(1)),
-      sensitivityContrib: parseFloat((z.sensitivity * 100 * 0.2).toFixed(1)),
+      c:  riskColors(z.risk, viewMode, z),
+      fc: FC_ARROWS[z.forecast] || FC_ARROWS.stable,
+      aC: parseFloat((z.noise       * 0.4).toFixed(1)),
+      dC: parseFloat((z.shipDensity * 0.4).toFixed(1)),
+      sC: parseFloat((z.sensitivity * 100 * 0.2).toFixed(1)),
     })),
     [zones, viewMode]
   )
 
-  return styledZones.map(z => {
-    const isCritical = z.risk >= 75
-    const isElevated = z.risk >= 50 && z.risk < 75
+  return styled.map(z => {
+    const isCrit = z.risk >= 75
+    const isElev = z.risk >= 50 && z.risk < 75
+    const f = z.c.fill
+    const s = z.c.stroke
 
     return (
       <React.Fragment key={z.id}>
 
-        {/* Outer pulse ring — critical only */}
-        {isCritical && (
-          <Circle
-            center={[z.lat, z.lng]}
-            radius={R_PULSE}
+        {/* FAR glow ring — critical only, CSS blur */}
+        {isCrit && (
+          <Circle center={[z.lat, z.lng]} radius={R.FAR}
             pathOptions={{
-              color:       z.style.stroke,
-              fillColor:   z.style.fill,
-              fillOpacity: 0.04,
-              weight:      1,
-              opacity:     0.3,
-              dashArray:   '6 8',
-              className:   'zone-critical-outer',
+              fillColor: f, fillOpacity: 0.05,
+              color: s, opacity: 0.15, weight: 1,
+              dashArray: '4 10',
+              className: 'zone-critical-outer zone-blur-far',
             }}
             interactive={false}
           />
         )}
 
-        {/* Mid halo ring */}
-        <Circle
-          center={[z.lat, z.lng]}
-          radius={R_HALO}
+        {/* OUTER halo — CSS blur */}
+        <Circle center={[z.lat, z.lng]} radius={R.OUT}
           pathOptions={{
-            color:       z.style.stroke,
-            fillColor:   z.style.fill,
-            fillOpacity: isCritical ? 0.10 : isElevated ? 0.07 : 0.05,
-            weight:      0,
-            opacity:     0,
+            fillColor: f, fillOpacity: isCrit ? 0.09 : isElev ? 0.06 : 0.04,
+            color: 'transparent', weight: 0,
+            className: 'zone-blur-out',
           }}
           interactive={false}
         />
 
-        {/* Core filled circle */}
-        <Circle
-          center={[z.lat, z.lng]}
-          radius={R_CORE}
+        {/* MID glow — slight blur */}
+        <Circle center={[z.lat, z.lng]} radius={R.MID}
           pathOptions={{
-            color:       z.style.stroke,
-            fillColor:   z.style.fill,
-            fillOpacity: isCritical ? 0.45 : isElevated ? 0.32 : 0.22,
-            weight:      isCritical ? 2 : 1.5,
-            opacity:     isCritical ? 0.9 : isElevated ? 0.7 : 0.5,
-            className:   isCritical ? 'zone-critical-inner' : isElevated ? 'zone-elevated-inner' : '',
+            fillColor: f, fillOpacity: isCrit ? 0.16 : isElev ? 0.11 : 0.07,
+            color: 'transparent', weight: 0,
+            className: 'zone-blur-mid',
+          }}
+          interactive={false}
+        />
+
+        {/* CORE — main visible zone with tooltip */}
+        <Circle center={[z.lat, z.lng]} radius={R.CORE}
+          pathOptions={{
+            fillColor: f, fillOpacity: isCrit ? 0.38 : isElev ? 0.26 : 0.17,
+            color: s, weight: isCrit ? 1.5 : 1,
+            opacity: isCrit ? 0.85 : isElev ? 0.60 : 0.40,
+            className: isCrit ? 'zone-critical-inner' : isElev ? 'zone-elevated-inner' : 'zone-safe-inner',
           }}
         >
           <Tooltip direction="top" opacity={1} className="!p-0 !m-0 !border-0 !shadow-none !bg-transparent">
             <div style={{
-              background:    'rgba(4,10,26,0.97)',
-              border:        `1px solid ${z.style.stroke}30`,
-              borderRadius:  10,
-              padding:       '12px 14px',
-              minWidth:      220,
-              backdropFilter: 'blur(20px)',
-              boxShadow:     `0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px ${z.style.stroke}15`,
+              background:    'rgba(3,10,24,0.97)',
+              border:        `1px solid ${s}28`,
+              borderRadius:  11,
+              padding:       '13px 15px',
+              minWidth:      228,
+              backdropFilter: 'blur(24px)',
+              boxShadow:     `0 12px 40px rgba(0,0,0,0.65), 0 0 0 1px ${s}12, inset 0 1px 0 rgba(255,255,255,0.03)`,
             }}>
-              {/* Zone header */}
-              <div className="flex items-start justify-between gap-2" style={{ marginBottom: 8 }}>
+              {/* Header */}
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
                 <div>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: '#ddeeff', lineHeight: 1.2 }}>{z.name}</div>
-                  <div style={{ fontSize: 10, color: '#6b8fae', marginTop: 2 }}>{z.region}</div>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: '#e2eeff', lineHeight: 1.25 }}>{z.name}</div>
+                  <div style={{ fontSize: 9, color: '#5a7a9a', marginTop: 2, letterSpacing: '0.05em' }}>{z.region} · {z.id}</div>
                 </div>
-                <span style={{
-                  fontSize: 9, fontWeight: 800, color: z.lbl.color, letterSpacing: '0.08em',
-                  padding: '2px 7px', borderRadius: 20,
-                  background: `${z.lbl.color}18`, border: `1px solid ${z.lbl.color}40`,
-                  whiteSpace: 'nowrap',
-                }}>{z.lbl.text}</span>
+                <div style={{
+                  fontSize: 9, fontWeight: 800, color: z.c.lc, letterSpacing: '0.10em',
+                  padding: '3px 8px', borderRadius: 20,
+                  background: `${f}18`, border: `1px solid ${s}35`,
+                  whiteSpace: 'nowrap', marginLeft: 8,
+                  boxShadow: isCrit ? `0 0 10px ${f}30` : 'none',
+                }}>{z.c.label}</div>
               </div>
 
-              {/* Metrics row */}
-              <div className="flex gap-5" style={{ paddingBottom: 10, marginBottom: 10, borderBottom: '1px solid rgba(34,211,238,0.08)' }}>
+              {/* Metrics */}
+              <div style={{ display: 'flex', gap: 16, paddingBottom: 10, marginBottom: 10, borderBottom: '1px solid rgba(34,211,238,0.07)' }}>
                 <div>
-                  <div style={{ fontSize: 9, color: '#334a60', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Risk</div>
-                  <div style={{ fontSize: 22, fontWeight: 800, color: z.lbl.color, fontFamily: 'var(--font-mono)', lineHeight: 1 }}>{z.risk}</div>
+                  <div style={{ fontSize: 8, color: '#2a3f55', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Risk</div>
+                  <div style={{ fontSize: 24, fontWeight: 900, color: z.c.lc, fontFamily: 'var(--font-mono)', lineHeight: 1, textShadow: isCrit ? `0 0 16px ${f}80` : 'none' }}>{z.risk}</div>
                 </div>
                 <div>
-                  <div style={{ fontSize: 9, color: '#334a60', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Acoustic</div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: '#ddeeff', fontFamily: 'var(--font-mono)' }}>{z.noise} dB</div>
+                  <div style={{ fontSize: 8, color: '#2a3f55', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Acoustic</div>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: '#c8ddef', fontFamily: 'var(--font-mono)' }}>{z.noise} dB</div>
                 </div>
                 <div>
-                  <div style={{ fontSize: 9, color: '#334a60', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Density</div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: '#ddeeff', fontFamily: 'var(--font-mono)' }}>{Math.round(z.shipDensity)}</div>
+                  <div style={{ fontSize: 8, color: '#2a3f55', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Density</div>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: '#c8ddef', fontFamily: 'var(--font-mono)' }}>{Math.round(z.shipDensity)}</div>
                 </div>
                 <div style={{ marginLeft: 'auto', textAlign: 'right' }}>
-                  <div style={{ fontSize: 9, color: '#334a60', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Trend</div>
-                  <div style={{ fontSize: 16, fontWeight: 800, color: z.fc.color }}>{z.fc.arrow}</div>
+                  <div style={{ fontSize: 8, color: '#2a3f55', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Forecast</div>
+                  <div style={{ fontSize: 18, fontWeight: 900, color: z.fc.color }}>{z.fc.arrow}</div>
                 </div>
               </div>
 
               {/* Contributors */}
-              <div style={{ fontSize: 9, color: '#334a60', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 2 }}>Risk Breakdown</div>
-              <ContributorBar label="Acoustic Activity"     value={z.acousticContrib}    color="#38bdf8" />
-              <ContributorBar label="Ship Density"          value={z.densityContrib}      color="#f59e0b" />
-              <ContributorBar label="Ecological Sensitivity" value={z.sensitivityContrib} color="#a78bfa" />
+              <div style={{ fontSize: 8, color: '#2a3f55', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 4 }}>
+                Risk Contributors
+              </div>
+              <ContributorBar label="Acoustic Activity"      value={z.aC} color="#38bdf8" />
+              <ContributorBar label="Vessel Density"         value={z.dC} color="#f59e0b" />
+              <ContributorBar label="Ecological Sensitivity"  value={z.sC} color="#a78bfa" />
 
               {z.sonar && (
                 <div style={{
                   marginTop: 10, display: 'flex', alignItems: 'center', gap: 6,
-                  fontSize: 10, color: '#fbbf24',
-                  background: 'rgba(245,158,11,0.10)', borderRadius: 6, padding: '5px 9px',
+                  fontSize: 10, color: '#fbbf24', fontWeight: 600,
+                  background: 'rgba(245,158,11,0.08)', borderRadius: 6, padding: '5px 10px',
+                  border: '1px solid rgba(245,158,11,0.18)',
                 }}>
-                  <span>⚡</span> Active sonar anomaly detected
+                  ⚡ Active sonar anomaly detected
                 </div>
               )}
             </div>
           </Tooltip>
         </Circle>
+
+        {/* CENTER DOT — bright focal point */}
+        <Circle center={[z.lat, z.lng]} radius={R.DOT}
+          pathOptions={{
+            fillColor: s, fillOpacity: isCrit ? 0.70 : isElev ? 0.50 : 0.35,
+            color: s, weight: 0, opacity: 0,
+          }}
+          interactive={false}
+        />
 
       </React.Fragment>
     )
