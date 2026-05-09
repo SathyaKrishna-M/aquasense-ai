@@ -1,0 +1,279 @@
+id	measurementType	measurementValue	measurementUnit
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315919	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315920	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315921	Abundance	2	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315922	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315923	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315924	Abundance	7	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315925	Abundance	5	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315926	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315927	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315928	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315929	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315930	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315931	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315932	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315933	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315934	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315935	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315936	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315937	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315938	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315939	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315940	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315942	Abundance	6	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315943	Abundance	2	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315944	Abundance	14	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315946	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315947	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315996	Abundance	7	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315997	Abundance	3	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315998	Abundance	4	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257315999	Abundance	2	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316005	Abundance	2	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316006	Abundance	5	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316007	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316008	Abundance	20	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316009	Abundance	2	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316010	Abundance	9	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316013	Abundance	10	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316014	Abundance	9	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316015	Abundance	3	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316023	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316024	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316025	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316026	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316027	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316028	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316029	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316030	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316031	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316032	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316033	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316034	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316035	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316036	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316037	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316038	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316039	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316040	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316041	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316042	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316043	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316044	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316045	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316046	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316047	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316048	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316049	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316050	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316051	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316052	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316053	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316054	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316055	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316056	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316057	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316058	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316059	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316060	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316061	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316062	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316063	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316064	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316065	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316066	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316067	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316068	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316069	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316070	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316071	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316072	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316073	Habitat description	Marram dunes	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316074	Habitat description	Marram dunes	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316075	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316076	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316077	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316078	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316079	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316080	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316081	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316082	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316083	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316084	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316085	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316086	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316087	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316088	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316089	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316090	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316091	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316092	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316093	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316094	Habitat description	Sea stacks and islets	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316095	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316096	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316097	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316098	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316099	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316100	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316101	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316102	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316103	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316104	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316105	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316106	Habitat description	Sedimentary sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316109	Habitat description	Shingle and gravel banks	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316110	Habitat description	Shingle and gravel banks	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316111	Habitat description	Shingle and gravel banks	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316112	Habitat description	Shingle and gravel banks	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316114	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316115	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316116	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316117	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316118	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316119	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316120	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316121	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316122	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316123	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316124	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316125	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316126	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316127	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316128	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316129	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316130	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316131	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316132	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316135	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316136	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316137	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316138	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316139	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316140	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316141	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316142	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316144	Habitat description	Littoral rock	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316145	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316146	Abundance	1	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316147	Abundance	2	unit unknown
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316148	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316149	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316150	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316151	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316152	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316153	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316154	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316155	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316156	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316157	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316158	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316159	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316160	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316161	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316162	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316163	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316164	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316175	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316176	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316177	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316178	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316179	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316180	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316181	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316182	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316183	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316184	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316185	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316186	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316187	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316188	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316189	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316190	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316191	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316192	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316193	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316194	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316195	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316197	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316198	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316199	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316200	Habitat description	Sea walls, piers and jetties	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316204	Habitat description	Fixed dunes	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316212	Habitat description	Littoral sediment	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316213	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316215	Habitat description	Sand dune systems	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316216	Habitat description	Shingle and gravel banks	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316217	Habitat description	Shingle and gravel banks	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316218	Habitat description	Shingle and gravel banks	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316219	Habitat description	Shingle and gravel banks	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316221	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316222	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316223	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316224	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316225	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316226	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316227	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316228	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316229	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316230	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316231	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316232	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316233	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316234	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316235	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316236	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316237	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316238	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316239	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316240	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316241	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316242	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316243	Habitat description	Rocky sea cliffs	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316245	Habitat description	Sublittoral sediment	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316246	Habitat description	Sublittoral sediment	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316247	Habitat description	Sublittoral sediment	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316248	Habitat description	Sublittoral sediment	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316249	Habitat description	Sublittoral sediment	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316250	Types of seabed present	Mud	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316250	Sampling method	Dive	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316251	Types of seabed present	Mud	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316251	Sampling method	Dive	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316252	Types of seabed present	Mud	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316252	Sampling method	Dive	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316253	Types of seabed present	Mud	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316253	Sampling method	Dive	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316254	Types of seabed present	Mud	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316254	Sampling method	Dive	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316255	Types of seabed present	Mud	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316255	Sampling method	Dive	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316256	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316256	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316257	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316257	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316258	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316258	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316259	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316259	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316260	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316260	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316261	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316261	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316262	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316262	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316263	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316263	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316264	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316264	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316265	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316265	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316266	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316266	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316267	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316267	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316268	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316268	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316269	Types of seabed present	Rocky Reef,Boulders,Cobbles and Pebbles	
+ie.nbdc.dataset.CoastalAndMarineSpecies.23640212257316269	Seabed cover types	Kelp park,Mixed seaweeds,Barren sediment(no life)	
+ie.nbdc.dataset.CoastalAndMarineSpecies.97209583948268443	Habitat description	Tidal rivers	

@@ -1,0 +1,413 @@
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+         packageId="a057e413-3d26-4f2a-9235-e071a0116bca/v1.0" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+    <dataset>
+        <alternateIdentifier>https://doi.org/10.82144/1927acdf</alternateIdentifier>
+        <alternateIdentifier>https://seamap.env.duke.edu/dataset/502</alternateIdentifier>
+        <alternateIdentifier>https://www.gbif.org/dataset/a057e413-3d26-4f2a-9235-e071a0116bca</alternateIdentifier>
+        <alternateIdentifier>https://obis.org/dataset/099db653-2c4e-4002-82c4-be5f86f8e315</alternateIdentifier>
+        <alternateIdentifier>a057e413-3d26-4f2a-9235-e071a0116bca</alternateIdentifier>
+        <alternateIdentifier>https://ipt.env.duke.edu/resource?r=zd_502</alternateIdentifier>
+        <shortName>zd_502</shortName>
+        <title xml:lang="eng">Virginia Aquarium Marine Mammal Strandings 1988-2008</title>
+        <creator>
+            <individualName>
+                <givenName>Sue</givenName>
+                <surName>Barco</surName>
+            </individualName>
+            <organizationName>Virginia Aquarium Stranding Response</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>SGBarco@virginiaaquarium.com</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <surName>OBIS-SEAMAP</surName>
+            </individualName>
+            <organizationName>Marine Geospatial Ecology Lab, Duke University</organizationName>
+            <address>
+                <deliveryPoint>A328 LSRC building</deliveryPoint>
+                <city>Durham</city>
+                <administrativeArea>NC</administrativeArea>
+                <postalCode>27708</postalCode>
+                <country>US</country>
+            </address>
+            <electronicMailAddress>seamap-contact@duke.edu</electronicMailAddress>
+            <onlineUrl>https://seamap.env.duke.edu</onlineUrl>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <surName>OBIS-SEAMAP</surName>
+            </individualName>
+            <organizationName>Marine Geospatial Ecology Lab, Duke University</organizationName>
+            <address>
+                <deliveryPoint>A328 LSRC building</deliveryPoint>
+                <city>Durham</city>
+                <administrativeArea>NC</administrativeArea>
+                <postalCode>27708</postalCode>
+                <country>US</country>
+            </address>
+            <electronicMailAddress>seamap-contact@duke.edu</electronicMailAddress>
+            <onlineUrl>https://seamap.env.duke.edu</onlineUrl>
+            <role>distributor</role>
+        </associatedParty>
+        <associatedParty>
+            <individualName>
+                <givenName>Sue</givenName>
+                <surName>Barco</surName>
+            </individualName>
+            <organizationName>Virginia Aquarium Stranding Response</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>SGBarco@virginiaaquarium.com</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+            <role>owner</role>
+        </associatedParty>
+        <pubDate>
+            2025-10-07
+        </pubDate>
+        <language>eng</language>
+        <abstract>
+            <para>Original provider:
+Virginia Aquarium &amp; Marine Science Center
+
+Dataset credits:
+Virginia Aquarium Stranding Response Program
+
+Abstract:
+Virginia receives 100-140 marine mammal strandings per year and the Virginia Aquarium &amp; Marine Science Center (VAQS) is the sole response and rehabilitation facility in the state. VAQS records basic (level A) data, for all marine mammals, as well as more in depth (level B and C) data whenever possible. The OBIS dataset contains the basic level A data for all stranded marine mammals, responded to by VAQS, and spans the years of 1988-2008.
+</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Observation</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Marine Biology</keyword>
+            <keyword>Visual sighting</keyword>
+            <keyword>Land-based</keyword>
+            <keyword>Sightings</keyword>
+            <keyword>marine mammal</keyword>
+            <keyword>cetacean</keyword>
+            <keyword>seal</keyword>
+            <keyword>pinniped</keyword>
+            <keyword>stranding</keyword>
+            <keyword>human interaction</keyword>
+            <keyword>rehabilitation</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <additionalInfo>
+            <para>marine, harvested by iOBIS.</para>
+        </additionalInfo>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <distribution scope="document">
+            <online>
+                <url function="information">https://seamap.env.duke.edu/dataset/502</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>Oceans,Virginia,Chesapeake Bay,Mid Atlantic</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-76.966667</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-75.16142</eastBoundingCoordinate>
+                    <northBoundingCoordinate>38.179276</northBoundingCoordinate>
+                    <southBoundingCoordinate>34.92617</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>1988-01-15</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>2008-12-16</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Scientific names are based on the Integrated Taxonomic Information System (ITIS).</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Balaenoptera acutorostrata</taxonRankValue>
+                    <commonName>Common minke whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Balaenoptera borealis</taxonRankValue>
+                    <commonName>Sei whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Balaenoptera physalus</taxonRankValue>
+                    <commonName>Fin whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>suborder</taxonRankName>
+                    <taxonRankValue>Caniformia</taxonRankValue>
+                    <commonName>Pinnipeds</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>order</taxonRankName>
+                    <taxonRankValue>Cetacea</taxonRankValue>
+                    <commonName>Cetaceans</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Cystophora cristata</taxonRankValue>
+                    <commonName>Hooded seal</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>family</taxonRankName>
+                    <taxonRankValue>Delphinidae</taxonRankValue>
+                    <commonName>Dolphins</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Delphinus delphis</taxonRankValue>
+                    <commonName>Short-beaked common dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Eubalaena glacialis</taxonRankValue>
+                    <commonName>North Atlantic right whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>genus</taxonRankName>
+                    <taxonRankValue>Globicephala</taxonRankValue>
+                    <commonName>Pilot whales</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Globicephala macrorhynchus</taxonRankValue>
+                    <commonName>Short-finned pilot whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Globicephala melas</taxonRankValue>
+                    <commonName>Long-finned pilot whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Grampus griseus</taxonRankValue>
+                    <commonName>Risso&apos;s dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Halichoerus grypus</taxonRankValue>
+                    <commonName>Atlantic gray seal</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>genus</taxonRankName>
+                    <taxonRankValue>Kogia</taxonRankValue>
+                    <commonName>Pygmy sperm whales</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Kogia breviceps</taxonRankValue>
+                    <commonName>Pygmy sperm whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Kogia sima</taxonRankValue>
+                    <commonName>Dwarf sperm whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Lagenorhynchus acutus</taxonRankValue>
+                    <commonName>Atlantic white-sided dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Megaptera novaeangliae</taxonRankValue>
+                    <commonName>Humpback whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Mesoplodon europaeus</taxonRankValue>
+                    <commonName>Gervais&apos; beaked whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Mesoplodon mirus</taxonRankValue>
+                    <commonName>True&apos;s beaked whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Pagophilus groenlandicus</taxonRankValue>
+                    <commonName>Harp seal</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Peponocephala electra</taxonRankValue>
+                    <commonName>Melon-headed whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Phoca vitulina</taxonRankValue>
+                    <commonName>Harbor seal</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Phocoena phocoena</taxonRankValue>
+                    <commonName>Harbor porpoise</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Physeter macrocephalus</taxonRankValue>
+                    <commonName>Sperm whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Pseudorca crassidens</taxonRankValue>
+                    <commonName>False killer whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>genus</taxonRankName>
+                    <taxonRankValue>Stenella</taxonRankValue>
+                    <commonName>Spinner dolphins</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Stenella attenuata</taxonRankValue>
+                    <commonName>Pantropical spotted dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Stenella coeruleoalba</taxonRankValue>
+                    <commonName>Striped dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Steno bredanensis</taxonRankValue>
+                    <commonName>Rough-toothed dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Trichechus manatus</taxonRankValue>
+                    <commonName>West indian manatee</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Tursiops truncatus</taxonRankValue>
+                    <commonName>Common bottlenose dolphin</commonName>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <purpose><para>These data can be used to report the presence and seasonality of marine mammal species when survey data are lacking. Absence of a species from the dataset does not, however, indicate absence from the area as stranding data are opportunistic data that require detection of a mortality on a coastline. Those data points located in a water body indicate that the animal was first seen floating. Human interaction (HI) data are included as part of the level A dataset but must be analyzed carefully as 'YES' for HI does not necessarily indicate that the stranding or the death of an animal was caused by human activity.</para></purpose>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Sue</givenName>
+                <surName>Barco</surName>
+            </individualName>
+            <organizationName>Virginia Aquarium Stranding Response</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>SGBarco@virginiaaquarium.com</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+        </contact>
+        <methods>
+            <methodStep>
+                <description>
+                    <para>NA</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>NA</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>NA</para>
+                </samplingDescription>
+            </sampling>
+        </methods>
+        <project>
+            <title>Virginia Aquarium Marine Mammal Strandings 1988-2008</title>
+            <personnel>
+                <individualName>
+                    <givenName>Sue</givenName>
+                    <surName>Barco</surName>
+                </individualName>
+                <role>owner</role>
+            </personnel>
+            <funding>
+                <para>NA</para>
+            </funding>
+        </project>
+    </dataset>
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-07-31T14:19:17.000+00:00</dateStamp>
+                <hierarchyLevel>dataset</hierarchyLevel>
+                <citation identifier="https://doi.org/10.82144/1927acdf">Barco, S. 2013. Virginia Aquarium Marine Mammal Strandings 1988-2008. Version 1.0.0. Dataset published in OBIS-SEAMAP. https://doi.org/10.82144/1927acdf.</citation>
+                <physical>
+                    <objectName>OBIS-SEAMAP Dataset Page</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>Interactive map</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/502</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>FGDC Metadata</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>XML</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/502/fgdc</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>EML Metadata</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>XML</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/502/eml</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>OBIS-SEAMAP</parentCollectionIdentifier>
+                    <collectionIdentifier>zd_502</collectionIdentifier>
+                    <collectionName>zd_502</collectionName>
+                </collection>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+</eml:eml>

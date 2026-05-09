@@ -1,0 +1,342 @@
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+         packageId="7defa0e3-67db-420b-8ef6-e1d25b460750/v1.0" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+    <dataset>
+        <alternateIdentifier>https://doi.org/10.82144/596d9ff8</alternateIdentifier>
+        <alternateIdentifier>https://seamap.env.duke.edu/dataset/327</alternateIdentifier>
+        <alternateIdentifier>https://www.gbif.org/dataset/7defa0e3-67db-420b-8ef6-e1d25b460750</alternateIdentifier>
+        <alternateIdentifier>https://obis.org/dataset/8bf9c13a-0dcf-4bbf-a7fc-da9d076bc78a</alternateIdentifier>
+        <alternateIdentifier>7defa0e3-67db-420b-8ef6-e1d25b460750</alternateIdentifier>
+        <alternateIdentifier>https://ipt.env.duke.edu/resource?r=zd_327</alternateIdentifier>
+        <shortName>zd_327</shortName>
+        <title xml:lang="eng">Bahamas Marine Mammal Research Organisation Strandings</title>
+        <creator>
+            <individualName>
+                <givenName>Charlotte</givenName>
+                <surName>Dunn</surName>
+            </individualName>
+            <organizationName>Charlotte Dunn</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>unknown@dummy.com</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <surName>OBIS-SEAMAP</surName>
+            </individualName>
+            <organizationName>Marine Geospatial Ecology Lab, Duke University</organizationName>
+            <address>
+                <deliveryPoint>A328 LSRC building</deliveryPoint>
+                <city>Durham</city>
+                <administrativeArea>NC</administrativeArea>
+                <postalCode>27708</postalCode>
+                <country>US</country>
+            </address>
+            <electronicMailAddress>seamap-contact@duke.edu</electronicMailAddress>
+            <onlineUrl>https://seamap.env.duke.edu</onlineUrl>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <surName>OBIS-SEAMAP</surName>
+            </individualName>
+            <organizationName>Marine Geospatial Ecology Lab, Duke University</organizationName>
+            <address>
+                <deliveryPoint>A328 LSRC building</deliveryPoint>
+                <city>Durham</city>
+                <administrativeArea>NC</administrativeArea>
+                <postalCode>27708</postalCode>
+                <country>US</country>
+            </address>
+            <electronicMailAddress>seamap-contact@duke.edu</electronicMailAddress>
+            <onlineUrl>https://seamap.env.duke.edu</onlineUrl>
+            <role>distributor</role>
+        </associatedParty>
+        <associatedParty>
+            <individualName>
+                <givenName>Charlotte</givenName>
+                <surName>Dunn</surName>
+            </individualName>
+            <organizationName>Charlotte Dunn</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>unknown@dummy.com</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+            <role>owner</role>
+        </associatedParty>
+        <pubDate>
+            2025-10-07
+        </pubDate>
+        <language>eng</language>
+        <abstract>
+            <para>Original provider:
+Bahamas Marine Mammal Research Organisation
+
+Dataset credits:
+Bahamas Marine Mammal Research Organisation
+
+Abstract:
+The Bahamas Marine Mammal Research Organisation has a long-term study that has been documenting the occurrence, distribution, and abundance of marine mammals around the islands of The Bahamas since 1991. With more than 1,900 marine mammal encounters in the Bahamas, we are providing the only comprehensive documentation of the marine mammal fauna in this part of the world. Our research is based on the use of systematic boat-based surveys for describing the distribution and habitat use of different marine mammal species. We employ photo-identification techniques for the recognition of individual whales and dolphins, and we have developed new statistical approaches for using these data to determine abundance estimates and occupancy patterns. This photographic sampling is complemented by the collection of skin and faecal samples for molecular genetic analysis, which are being used to assess levels of genetic diversity and investigate the structuring of marine mammal populations.&lt;br&gt;&lt;br&gt;
+The dataset presented here includes only marine mammal strandings, and other sea turtle and marine mammal sightings are included in separate datasets in OBIS-SEAMAP. The dataset presented here includes 89 stranding records between 1944 and 2005, including 15 species with Cuvier's beaked whale being the most common. The entire dataset consists of 444 marine mammal sightings between 1988 and 2005, including sightings reported from the public. The dataset also includes 1,934 BMMS vessel encounters with marine mammals between 1991 and 2005, comprising 20 different species, with the Atlantic bottlenose dolphin representing 60% of all encounters. Finally, the dataset includes 101 sightings of turtles comprising 3 different species between 1991 and 2005.
+</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Observation</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Marine Biology</keyword>
+            <keyword>Visual sighting</keyword>
+            <keyword>Vessels</keyword>
+            <keyword>Sightings</keyword>
+            <keyword>Stranding</keyword>
+            <keyword>Marine mammals</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <additionalInfo>
+            <para>marine, harvested by iOBIS. The stranding records have no time recorded and time was filled with 12:00:00. Some records do not have the exact date. See [DateApprx] field, which is not included in the downloadable data for the public, but may be available if requested. Please contact the primary data provider to ask for permission for additional fields.</para>
+        </additionalInfo>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <distribution scope="document">
+            <online>
+                <url function="information">https://seamap.env.duke.edu/dataset/327</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>Oceans,Bahamas</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-79</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-73.04265</eastBoundingCoordinate>
+                    <northBoundingCoordinate>26.981667</northBoundingCoordinate>
+                    <southBoundingCoordinate>20.932667</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>1944-10-17</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>2005-07-15</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Scientific names are based on the Integrated Taxonomic Information System (ITIS).</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Balaenoptera acutorostrata</taxonRankValue>
+                    <commonName>Common minke whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Balaenoptera physalus</taxonRankValue>
+                    <commonName>Fin whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>order</taxonRankName>
+                    <taxonRankValue>Cetacea</taxonRankValue>
+                    <commonName>Cetaceans</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Cystophora cristata</taxonRankValue>
+                    <commonName>Hooded seal</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>family</taxonRankName>
+                    <taxonRankValue>Delphinidae</taxonRankValue>
+                    <commonName>Dolphins</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Globicephala macrorhynchus</taxonRankValue>
+                    <commonName>Short-finned pilot whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>family</taxonRankName>
+                    <taxonRankValue>Hyperoodontidae</taxonRankValue>
+                    <commonName>Beaked whales</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>genus</taxonRankName>
+                    <taxonRankValue>Kogia</taxonRankValue>
+                    <commonName>Pygmy sperm whales</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Kogia breviceps</taxonRankValue>
+                    <commonName>Pygmy sperm whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Kogia sima</taxonRankValue>
+                    <commonName>Dwarf sperm whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Megaptera novaeangliae</taxonRankValue>
+                    <commonName>Humpback whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Mesoplodon densirostris</taxonRankValue>
+                    <commonName>Blainville&apos;s beaked whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Mesoplodon europaeus</taxonRankValue>
+                    <commonName>Gervais&apos; beaked whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Orcinus orca</taxonRankValue>
+                    <commonName>Killer whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Physeter macrocephalus</taxonRankValue>
+                    <commonName>Sperm whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Stenella frontalis</taxonRankValue>
+                    <commonName>Atlantic spotted dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Trichechus manatus</taxonRankValue>
+                    <commonName>West indian manatee</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Tursiops truncatus</taxonRankValue>
+                    <commonName>Common bottlenose dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Ziphius cavirostris</taxonRankValue>
+                    <commonName>Cuvier&apos;s beaked whale</commonName>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <purpose><para/></purpose>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Charlotte</givenName>
+                <surName>Dunn</surName>
+            </individualName>
+            <organizationName>Charlotte Dunn</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>unknown@dummy.com</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+        </contact>
+        <methods>
+            <methodStep>
+                <description>
+                    <para>NA</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>NA</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>NA</para>
+                </samplingDescription>
+            </sampling>
+        </methods>
+        <project>
+            <title>Bahamas Marine Mammal Research Organisation Strandings</title>
+            <personnel>
+                <individualName>
+                    <givenName>Charlotte</givenName>
+                    <surName>Dunn</surName>
+                </individualName>
+                <role>owner</role>
+            </personnel>
+            <funding>
+                <para>NA</para>
+            </funding>
+        </project>
+    </dataset>
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-07-31T14:13:39.000+00:00</dateStamp>
+                <hierarchyLevel>dataset</hierarchyLevel>
+                <citation identifier="https://doi.org/10.82144/596d9ff8">Dunn, C. 2018. Bahamas Marine Mammal Research Organisation Strandings. Version 1.0.0. Dataset published in OBIS-SEAMAP. https://doi.org/10.82144/596d9ff8.</citation>
+                <bibliography>
+                    <citation>Bahamas Marine Mammal Research Organisation. 2006. Bahamas Marine Mammal Research Organisation Strandings. unpublished data.</citation>
+                </bibliography>
+                <physical>
+                    <objectName>OBIS-SEAMAP Dataset Page</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>Interactive map</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/327</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>FGDC Metadata</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>XML</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/327/fgdc</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>EML Metadata</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>XML</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/327/eml</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>OBIS-SEAMAP</parentCollectionIdentifier>
+                    <collectionIdentifier>zd_327</collectionIdentifier>
+                    <collectionName>zd_327</collectionName>
+                </collection>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+</eml:eml>

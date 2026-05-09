@@ -1,0 +1,309 @@
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+         packageId="55851a1a-31c5-4d72-b405-b0e8529818cb/v1.0" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+    <dataset>
+        <alternateIdentifier>https://doi.org/10.82144/d18f7881</alternateIdentifier>
+        <alternateIdentifier>https://seamap.env.duke.edu/dataset/820</alternateIdentifier>
+        <alternateIdentifier>https://www.gbif.org/dataset/55851a1a-31c5-4d72-b405-b0e8529818cb</alternateIdentifier>
+        <alternateIdentifier>https://obis.org/dataset/b647429d-8e09-4fcf-a555-23eb38f5b16b</alternateIdentifier>
+        <alternateIdentifier>55851a1a-31c5-4d72-b405-b0e8529818cb</alternateIdentifier>
+        <alternateIdentifier>https://ipt.env.duke.edu/resource?r=zd_820</alternateIdentifier>
+        <shortName>zd_820</shortName>
+        <title xml:lang="eng">NMML Gulf of Alaska marine mammal survey 2003</title>
+        <creator>
+            <individualName>
+                <givenName>Janice</givenName>
+                <surName>Waite</surName>
+            </individualName>
+            <organizationName>National Marine Mammal Laboratory</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>Janice.Waite@noaa.gov</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <surName>OBIS-SEAMAP</surName>
+            </individualName>
+            <organizationName>Marine Geospatial Ecology Lab, Duke University</organizationName>
+            <address>
+                <deliveryPoint>A328 LSRC building</deliveryPoint>
+                <city>Durham</city>
+                <administrativeArea>NC</administrativeArea>
+                <postalCode>27708</postalCode>
+                <country>US</country>
+            </address>
+            <electronicMailAddress>seamap-contact@duke.edu</electronicMailAddress>
+            <onlineUrl>https://seamap.env.duke.edu</onlineUrl>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <surName>OBIS-SEAMAP</surName>
+            </individualName>
+            <organizationName>Marine Geospatial Ecology Lab, Duke University</organizationName>
+            <address>
+                <deliveryPoint>A328 LSRC building</deliveryPoint>
+                <city>Durham</city>
+                <administrativeArea>NC</administrativeArea>
+                <postalCode>27708</postalCode>
+                <country>US</country>
+            </address>
+            <electronicMailAddress>seamap-contact@duke.edu</electronicMailAddress>
+            <onlineUrl>https://seamap.env.duke.edu</onlineUrl>
+            <role>distributor</role>
+        </associatedParty>
+        <associatedParty>
+            <individualName>
+                <givenName>Janice</givenName>
+                <surName>Waite</surName>
+            </individualName>
+            <organizationName>National Marine Mammal Laboratory</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>Janice.Waite@noaa.gov</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+            <role>owner</role>
+        </associatedParty>
+        <pubDate>
+            2025-10-07
+        </pubDate>
+        <language>eng</language>
+        <abstract>
+            <para>Original provider:
+National Marine Mammal Laboratory
+
+Dataset credits:
+National Marine Mammal Laboratory
+
+Abstract:
+Visual surveys for cetaceans were conducted in the Gulf of Alaska in association with a NOAA/Alaska Fisheries Science Center’s pollock stock assessment survey aboard the NOAA ship Miller Freeman from  26 June – 15 July 2003. Standard line-transect methods were used with three observers rotating through two 25x (Big Eye) binocular positions and one recorder on the flying bridge. Survey effort was conducted along the pollock survey transect lines, weather permitting. Additional effort was made while in transit to and from pollock survey waypoints. A total of 2,242 km of trackline were surveyed with 364 cetacean sightings (1,079 individuals). An additional 28 cetacean sightings were made (175 individuals) during off effort periods. Species included harbor porpoise (&lt;i&gt;Phocoena phocoena&lt;/i&gt;), Dall’s porpoise (&lt;i&gt;Phocoenoides dalli&lt;/i&gt;), Pacific white-sided dolphin (&lt;i&gt;Lagenorhynchus obliquidens&lt;/i&gt;), killer whale (&lt;i&gt;Orcinus orca&lt;/i&gt;), minke whale (&lt;i&gt;Balaenoptera acutorostrata&lt;/i&gt;), fin whale (&lt;i&gt;Balaenoptera physalus&lt;/i&gt;), humpback whale (&lt;i&gt;Megaptera novaeangliae&lt;/i&gt;), sperm whale (&lt;i&gt;Physeter macrocephalus&lt;/i&gt;), Baird’s beaked whale  (&lt;i&gt;Berardius bairdii&lt;/i&gt;), and Cuvier’s beaked whale (&lt;i&gt;Ziphius cavirostris&lt;/i&gt;).
+</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Observation</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Marine Biology</keyword>
+            <keyword>Visual sighting</keyword>
+            <keyword>Vessels</keyword>
+            <keyword>Sightings</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <additionalInfo>
+            <para>marine, harvested by iOBIS.</para>
+        </additionalInfo>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <distribution scope="document">
+            <online>
+                <url function="information">https://seamap.env.duke.edu/dataset/820</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>Oceans</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-156.896</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-146.717</eastBoundingCoordinate>
+                    <northBoundingCoordinate>60.7835</northBoundingCoordinate>
+                    <southBoundingCoordinate>56.0893</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>2003-06-27</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>2003-07-15</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Scientific names are based on the Integrated Taxonomic Information System (ITIS).</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>genus</taxonRankName>
+                    <taxonRankValue>Balaenoptera</taxonRankValue>
+                    <commonName>Baleen whales</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Balaenoptera acutorostrata</taxonRankValue>
+                    <commonName>Common minke whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Balaenoptera physalus</taxonRankValue>
+                    <commonName>Fin whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Berardius bairdii</taxonRankValue>
+                    <commonName>Baird&apos;s beaked whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>order</taxonRankName>
+                    <taxonRankValue>Cetacea</taxonRankValue>
+                    <commonName>Cetaceans</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>family</taxonRankName>
+                    <taxonRankValue>Delphinidae</taxonRankValue>
+                    <commonName>Dolphins</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Lagenorhynchus obliquidens</taxonRankValue>
+                    <commonName>Pacific white-sided dolphin</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Megaptera novaeangliae</taxonRankValue>
+                    <commonName>Humpback whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Orcinus orca</taxonRankValue>
+                    <commonName>Killer whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Phocoena phocoena</taxonRankValue>
+                    <commonName>Harbor porpoise</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Phocoenoides dalli</taxonRankValue>
+                    <commonName>Dall&apos;s porpoise</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Physeter macrocephalus</taxonRankValue>
+                    <commonName>Sperm whale</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>species</taxonRankName>
+                    <taxonRankValue>Ziphius cavirostris</taxonRankValue>
+                    <commonName>Cuvier&apos;s beaked whale</commonName>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <purpose><para>The primary purpose was to conduct a marine mammal survey as a piggyback project to the NOAA/AFSC acoustic pollock survey in the Gulf of Alaska around Kodiak Island and the Kenai Peninsula and use sighting data to estimate the abundance of and to describe the distribution of whales and porpoises in the survey area.</para></purpose>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Janice</givenName>
+                <surName>Waite</surName>
+            </individualName>
+            <organizationName>National Marine Mammal Laboratory</organizationName>
+            <positionName>Primary contact</positionName>
+            <electronicMailAddress>Janice.Waite@noaa.gov</electronicMailAddress>
+            <onlineUrl></onlineUrl>
+        </contact>
+        <methods>
+            <methodStep>
+                <description>
+                    <para>NA</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>NA</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>NA</para>
+                </samplingDescription>
+            </sampling>
+        </methods>
+        <project>
+            <title>NMML Gulf of Alaska marine mammal survey 2003</title>
+            <personnel>
+                <individualName>
+                    <givenName>Janice</givenName>
+                    <surName>Waite</surName>
+                </individualName>
+                <role>owner</role>
+            </personnel>
+            <funding>
+                <para>NA</para>
+            </funding>
+        </project>
+    </dataset>
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-07-31T15:49:41.000+00:00</dateStamp>
+                <hierarchyLevel>dataset</hierarchyLevel>
+                <citation identifier="https://doi.org/10.82144/d18f7881">Waite, J. 2012. NMML Gulf of Alaska marine mammal survey 2003. Version 1.0.0. Dataset published in OBIS-SEAMAP. https://doi.org/10.82144/d18f7881.</citation>
+                <bibliography>
+                    <citation identifier="http://www.afsc.noaa.gov/Quarterly/jas2003/divrptsNMML2.htm">Waite, J.M. 2003. Nationl Marine Mammal Laboratory (NMML) Cetacean Assessment and Ecology Program: Cetacean Survey. NOAA AFSC Quarterly Research Reports July-Sept 2003.</citation>
+                </bibliography>
+                <physical>
+                    <objectName>OBIS-SEAMAP Dataset Page</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>Interactive map</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/820</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>FGDC Metadata</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>XML</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/820/fgdc</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>EML Metadata</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>XML</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://seamap.env.duke.edu/dataset/820/eml</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>OBIS-SEAMAP</parentCollectionIdentifier>
+                    <collectionIdentifier>zd_820</collectionIdentifier>
+                    <collectionName>zd_820</collectionName>
+                </collection>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+</eml:eml>
